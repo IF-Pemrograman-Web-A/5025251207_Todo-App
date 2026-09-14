@@ -1,0 +1,100 @@
+body {
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    background-color: #a4530c;
+    color : #3a230a;
+}
+header {
+    background-color: #8da28c;
+    color: #eee9c1;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+main {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+.todo {
+    background-color: #eee9c1;
+    padding: 20px;
+    width: 50%;
+}
+
+.detail {
+    background-color: #eee9c1;
+    padding: 20px;
+    width: 50%;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #3a230a;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    margin: 0;
+}
+
+.item p {
+    margin: 5px 0 0;
+    color: #777777;
+}
+
+.detail button,
+form button {
+    background-color: #8da28c;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+aside {
+    background-color: #eee9c1;
+    margin: 20px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+}
+
+form textarea {
+    height: 80px;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+/* Untuk layar HP */
+@media (max-width: 600px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .todo,
+    .detail {
+        width: auto;
+    }
+
+}

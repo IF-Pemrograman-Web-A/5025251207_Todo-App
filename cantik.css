@@ -1,14 +1,18 @@
+
 body {
-    font-family: Georgia, sans-serif;
+    font-family: "American Typewriter", sans-serif;
     margin: 0;
-    background-color: #a4530c;
-    color : #3a230a;
+    background-color: #F6F5FA;
+    color : #1A1A2E;
 }
 header {
-    background-color: #8da28c;
-    color: #3a230a;
+    background-color: #B8B0FF;
+    color: #1A1A2E;
     text-align: center;
     padding: 20px;
+    border-radius: 0 0 24px 24px;
+    font-size: 30px;
+    
 }
 
 header h1 {
@@ -20,23 +24,26 @@ main {
     margin: 20px;
 }
 .todo {
-    background-color: #eee9c1;
+    background-color: #ebd172;
     padding: 20px;
     width: 50%;
+    border-radius: 20px;
 }
 
 .detail {
-    background-color: #eee9c1;
+    background-color: #a7adfe;
     padding: 20px;
     width: 50%;
+    border-radius: 20px;
 }
 
 .item {
     display: flex;
     gap: 10px;
-    border: 1px solid #3a230a;
+    border: 1px solid #1A1A2E;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 .item h3 {
@@ -45,21 +52,23 @@ main {
 
 .item p {
     margin: 5px 0 0;
-    color: #777777;
+    color: #2c2c2e;
 }
 
-.detail button,
-form button {
-    background-color: #8da28c;
-    color: white;
+header button, .item button, .detail button,form button{
+    background-color: #ebd172;
+    color: #2c2c2e;
     border: none;
-    padding: 10px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    font-size: 15px;
 }
 
 aside {
-    background-color: #eee9c1;
+    background-color: #ffb0ed;
     margin: 20px;
     padding: 20px;
+    border-radius: 20px;
 }
 
 form {
@@ -97,4 +106,34 @@ form button {
         width: auto;
     }
 
+}
+
+/* Styling untuk Dark Mode */
+body.dark-mode {
+    background-color: #1A1A2E;
+    color: #1A1A2E;
+}
+
+body.dark-mode header {
+    background-color: #B8B0FF;
+    color: #1A1A2E;
+}
+
+body.dark-mode .todo{
+    background-color: #ebd172;
+}
+body.dark-mode .detail{
+    background-color: #a7adfe;
+}
+body.dark-mode aside {
+    background-color: #ffb0ed;
+    color: #1A1A2E;
+}
+
+body.dark-mode .item {
+    border-color: #1A1A2E;
+}
+
+body.dark-mode .item p {
+    color: #F6F5FA;
 }

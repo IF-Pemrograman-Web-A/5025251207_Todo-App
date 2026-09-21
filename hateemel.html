@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Todo List</title>
     <link rel="stylesheet" href="cantik.css">
 </head>
@@ -11,11 +11,14 @@
     <header>
         <h1>MY TODO LIST</h1>
         <p>by Kezia 5025251207</p>
+        <button id="darkModeButton">Dark/Light Mode</button>
     </header>
 
     <main>
         <section class="todo">
             <h2>Todo List</h2>
+
+        <div id = "TodoList">
 
             <div class="item">
                 <input type="checkbox">
@@ -40,21 +43,23 @@
                     <p>Friday</p>
                 </div>
             </div>
+
+        </div>
         </section>
 
 
         <section class="detail">
             <h2>Todo Detail</h2>
 
-            <h3>Submit Jarkom</h3>
-            <p>
-            Kirim resume ke email Bapak Roy
+            <h3 id="detailTitle"> Select Todo</h3>
+            <p id="detailDesc">
+            Pilih TODO di sebelah kiri untuk melihat detailnya
             </p>
 
-            <p><b>Due:</b> Today</p>
-            <p><b>Status:</b> Not completed</p>
+            <p><b>Due:</b> <span id="detailDue">-</span></p>
+            <p><b>Status:</b> <span id="detailStatus">-</span></p>
 
-            <button>Complete</button>
+            <button id="complete">Complete</button>
         </section>
 
     </main>
@@ -63,20 +68,20 @@
     <aside>
         <h2>Add New</h2>
 
-        <form>
+        <form id = "newtodo">
             <label>Todo:</label>
-            <input type="text" placeholder="Insert todo">
+            <input type="text" id="todoinput" placeholder="Insert todo">
 
             <label>Description:</label>
-            <textarea placeholder="Description"></textarea>
+            <textarea id="description" placeholder="Description"></textarea>
 
             <label>Due Date:</label>
-            <input type="date">
+            <input type="date" id="date">
 
             <button type="submit">Add Todo</button>
 
         </form>
     </aside>
-
+    <script src="interaction.js"></script>
 </body>
 </html>

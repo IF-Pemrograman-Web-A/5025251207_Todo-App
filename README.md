@@ -10,10 +10,12 @@ Website Todo List sederhana dengan menggunakan HTML dan CSS. Di dalamnya menampi
 ---
 ## 🖼️ Tampilan Aplikasi
 | Mode Gelap (Dark Mode) |
-<img width="1440" height="900" alt="Screenshot 2026-09-21 at 5 11 23 PM" src="https://github.com/user-attachments/assets/585f00e4-b7de-4473-9801-3b35610c7aad" />
+<img width="1440" height="900" alt="Screenshot 2026-09-21 at 6 01 12 PM" src="https://github.com/user-attachments/assets/a1032f4b-4b06-4266-9fc5-0b794c3885f2" />
+
 
 | Mode Terang (Light Mode) |
-<img width="1440" height="900" alt="Screenshot 2026-09-21 at 5 09 38 PM" src="https://github.com/user-attachments/assets/f8044aca-0d95-4246-a292-12afc985d055" />
+<img width="1440" height="900" alt="Screenshot 2026-09-21 at 6 01 05 PM" src="https://github.com/user-attachments/assets/a799203f-79d5-46df-9f23-6564be12ca63" />
+
 
 ---
 ## ✨ Fitur Utama

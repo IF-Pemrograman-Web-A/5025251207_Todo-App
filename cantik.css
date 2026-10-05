@@ -1,42 +1,56 @@
+
 body {
-    font-family: Georgia, sans-serif;
+    font-family: "American Typewriter", sans-serif;
     margin: 0;
-    background-color: #a4530c;
-    color : #3a230a;
-}
-header {
-    background-color: #8da28c;
-    color: #3a230a;
-    text-align: center;
-    padding: 20px;
+    padding: 0;
+    background-color: #F6F5FA;
+    color: #1A1A2E;
 }
 
+header {
+    background-color: #B8B0FF;
+    color: #1A1A2E;
+    text-align: center;
+    padding: 24px 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
 header h1 {
     margin: 0;
+    font-size: 32px;
+}
+header p {
+    margin: 8px 0 16px 0;
+    font-size: 16px;
 }
 main {
     display: flex;
     gap: 20px;
     margin: 20px;
 }
+
 .todo {
-    background-color: #eee9c1;
+    background-color: #ebd172;
     padding: 20px;
     width: 50%;
+    border-radius: 20px;
 }
 
 .detail {
-    background-color: #eee9c1;
+    background-color: #a7adfe;
     padding: 20px;
     width: 50%;
+    border-radius: 20px;
 }
 
 .item {
     display: flex;
     gap: 10px;
-    border: 1px solid #3a230a;
+    border: 1px solid #1A1A2E;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 .item h3 {
@@ -45,21 +59,24 @@ main {
 
 .item p {
     margin: 5px 0 0;
-    color: #777777;
+    color: #2c2c2e;
 }
 
-.detail button,
-form button {
-    background-color: #8da28c;
-    color: white;
+header button, .item button, .detail button, form button {
+    background-color: #ebd172;
+    color: #2c2c2e;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 aside {
-    background-color: #eee9c1;
+    background-color: #ffb0ed;
     margin: 20px;
     padding: 20px;
+    border-radius: 20px;
 }
 
 form {
@@ -75,6 +92,8 @@ form label {
 form input,
 form textarea {
     padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #1A1A2E;
 }
 
 form textarea {
@@ -85,9 +104,7 @@ form button {
     margin-top: 15px;
 }
 
-/* Untuk layar HP */
 @media (max-width: 600px) {
-
     main {
         flex-direction: column;
     }
@@ -96,5 +113,59 @@ form button {
     .detail {
         width: auto;
     }
+}
 
+body.dark-mode {
+    background-color: #1A1A2E;
+    color: #1A1A2E;
+}
+
+body.dark-mode header {
+    background-color: #B8B0FF;
+    color: #1A1A2E;
+}
+
+body.dark-mode .todo {
+    background-color: #ebd172;
+}
+
+body.dark-mode .detail {
+    background-color: #a7adfe;
+}
+
+body.dark-mode aside {
+    background-color: #ffb0ed;
+    color: #1A1A2E;
+}
+
+body.dark-mode .item {
+    border-color: #1A1A2E;
+}
+
+body.dark-mode .item p {
+    color: #F6F5FA;
+}
+
+.item img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#detailImageContainer img {
+    border-radius: 10px;
+    border: 1px solid #1A1A2E;
+}
+
+.item:focus {
+    outline: 2px solid #1A1A2E;
+}
+
+body.dark-mode header button, 
+body.dark-mode .item button, 
+body.dark-mode .detail button, 
+body.dark-mode form button {
+    background-color: #F6F5FA;
+    color: #1A1A2E;
 }

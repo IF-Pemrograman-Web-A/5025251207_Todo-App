@@ -18,15 +18,15 @@ Website Todo List sederhana dengan menggunakan HTML dan CSS. Di dalamnya menampi
 
 ---
 ## ✨ Fitur Utama
-- *ADD NEW* : Menambahkan daftar tugas baru yang disertai dengan nama, deskripsi, serta due date
-- *EDIT* : Mengubah judul dan deskripsi daftar tugas yang sudah tersimpan sebelumnya
-- *DELETE* : Menghapus daftar tugas yang sudah tidak diperlukan lagi
-- *COMPLETE/ INCOMPLETE*: Menandai tugas yang sudah selesai atau mengembalikannya ke status belum selesai
-- *UPLOAD IMAGE*: Insert gambar
-- *SCHEDULED NOTIFICATIONS*: Pengiriman notifikasi pengingat secara otomatis
-- *(IndexedDB)**: Seluruh data tugas disimpan agar data tidak hilang saat halaman di-refresh
-- *MODE* : Fitur untuk memilih mode mana yang ingin digunakan (dark mode/ light mode)
-- *TODO DETAIL* : Melihat detail suatu TODO yang ingin kita tinjau
+- **ADD NEW** : Menambahkan daftar tugas baru yang disertai dengan nama, deskripsi, serta due date
+- **EDIT** : Mengubah judul dan deskripsi daftar tugas yang sudah tersimpan sebelumnya
+- **DELETE** : Menghapus daftar tugas yang sudah tidak diperlukan lagi
+- **COMPLETE/ INCOMPLETE** : Menandai tugas yang sudah selesai atau mengembalikannya ke status belum selesai
+- **UPLOAD IMAGE** : Insert gambar
+- **SCHEDULED NOTIFICATIONS** : Pengiriman notifikasi pengingat secara otomatis
+- **(IndexedDB)** : Seluruh data tugas disimpan agar data tidak hilang saat halaman di-refresh
+- **MODE** : Fitur untuk memilih mode mana yang ingin digunakan (dark mode/ light mode)
+- **TODO DETAIL** : Melihat detail suatu TODO yang ingin kita tinjau
 
 ---
 ## 📁 Struktur File

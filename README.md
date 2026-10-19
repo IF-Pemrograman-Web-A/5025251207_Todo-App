@@ -10,9 +10,11 @@ Website Todo List yang dikembangkan lebih lanjut menggunakan **PHP** dan **datab
 ---
 ## 🖼️ Tampilan Aplikasi
 | Mode Gelap (Dark Mode) |
+<img width="1440" height="820" alt="Screenshot 2026-10-19 at 7 26 15 PM" src="https://github.com/user-attachments/assets/847a6105-6d88-490b-8ca1-6ae7cbd6a8aa" />
 
 
 | Mode Terang (Light Mode) |
+<img width="1440" height="818" alt="Screenshot 2026-10-19 at 7 25 04 PM" src="https://github.com/user-attachments/assets/73bfdfee-55f6-4949-a452-54c08481ebf2" />
 
 
 ---
@@ -32,11 +34,18 @@ Website Todo List yang dikembangkan lebih lanjut menggunakan **PHP** dan **datab
 ## 📁 Struktur File
 
 ```
-my-todo-list/
-├── hateemel.html     # Halaman utama web
-├── cantik.css      # Modifikasi tampilan web (warna, hiasan)
-├── interaction.js     # Logika JavaScript & penerapan DOM
+todolist/
+├── index.php         # Halaman utama aplikasi, CRUD, dan tampilan
+├── config.php        # Konfigurasi koneksi database MySQL
+├── menu-bar.php      # Sidebar kategori tugas (Personal, Shared)
+├── cantik.css        # Modifikasi tampilan web (warna, tema gelap/terang, layout)
+├── interaction.js    # Logika JavaScript interaktif dan Service Worker
 ├── sw.js             # Service Worker untuk menangani pendaftaran & penjadwalan notifikasi
-└── README.md      # Dokumentasi proyek
+├── data.sql          # Skrip struktur tabel database dan data dummy
+├── uploads/          # Folder penyimpanan berkas foto yang di-upload
+└── hateemel.html     # Referensi antarmuka HTML awal
 
 ```
+
+---
+##  Preview 

@@ -2,81 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Todo List</title>
     <link rel="stylesheet" href="cantik.css">
 </head>
 
 <body>
     <header>
-        <h1>MY TODO LIST</h1>
-        <p>by Kezia 5025251207</p>
+        <div>
+            <h1>Welcome back 👋</h1>
+            <p>TODO LIST KEZIA</p>
+        </div>
+        <button id="darkModeButton" type="button" aria-label="Toggle Dark/Light Mode">Toggle Theme</button>
     </header>
 
-    <main>
-        <section class="todo">
-            <h2>Todo List</h2>
+    <div class="app-container">
+        <main role="main">
+            <section class="todo" aria-labelledby="todo-heading">
+                <h2 id="todo-heading">Your Activities Today</h2>
+                <div id="TodoList" role="region" aria-live="polite" aria-label="Daftar Tugas"></div>
+            </section>
+        
+            <section class="detail" aria-labelledby="detail-heading">
+                <h2 id="detail-heading">Todo Detail</h2>
 
-            <div class="item">
-                <input type="checkbox">
-                <div>
-                    <h3>Resume Jarkom</h3>
-                    <p>Today</p>
-                </div>
-            </div>
+                <h3 id="detailTitle">Select Todo</h3>
+                <p id="detailDesc">Pilih TODO di sebelah kiri untuk melihat detailnya</p>
 
-            <div class="item">
-                <input type="checkbox">
-                <div>
-                    <h3>Kelas PWeb </h3>
-                    <p>Tomorrow</p>
-                </div>
-            </div>
+                <p><b>Due:</b> <span id="detailDue">-</span></p>
+                <p><b>Notification Time:</b> <span id="detailNotifTime">-</span></p>
+                <p><b>Status:</b> <span id="detailStatus">-</span></p>
+                <div id="detailImageContainer" style="margin-top: 10px;"></div>
 
-            <div class="item">
-                <input type="checkbox">
-                <div>
-                    <h3>Quiz KPPL</h3>
-                    <p>Friday</p>
-                </div>
-            </div>
-        </section>
+                <button id="complete" type="button">Complete</button>
+            </section>
+        </main>
 
+        <aside role="complementary" aria-labelledby="add-heading">
+            <h2 id="add-heading">Add New Todo</h2>
 
-        <section class="detail">
-            <h2>Todo Detail</h2>
+            <form id="newtodo" role="form" aria-label="Form Tambah Todo">
+                <label for="todoinput">Todo Title</label>
+                <input type="text" id="todoinput" placeholder="Insert todo title" required aria-required="true">
 
-            <h3>Submit Jarkom</h3>
-            <p>
-            Kirim resume ke email Bapak Roy
-            </p>
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Description..."></textarea>
 
-            <p><b>Due:</b> Today</p>
-            <p><b>Status:</b> Not completed</p>
+                <label for="date">Due Date</label>
+                <input type="date" id="date">
 
-            <button>Complete</button>
-        </section>
+                <label for="todoImage">Capture / Upload Image</label>
+                <input type="file" id="todoImage" accept="image/*" capture="environment">
 
-    </main>
+                <label for="notifTime">Notification Time</label>
+                <input type="time" id="notifTime">
 
+                <button type="submit">Add Todo</button>
+            </form>
+        </aside>
+    </div>
 
-    <aside>
-        <h2>Add New</h2>
-
-        <form>
-            <label>Todo:</label>
-            <input type="text" placeholder="Insert todo">
-
-            <label>Description:</label>
-            <textarea placeholder="Description"></textarea>
-
-            <label>Due Date:</label>
-            <input type="date">
-
-            <button type="submit">Add Todo</button>
-
-        </form>
-    </aside>
-
+    <script src="interaction.js"></script>
 </body>
 </html>

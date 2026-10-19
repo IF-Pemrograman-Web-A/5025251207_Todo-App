@@ -48,4 +48,28 @@ todolist/
 ```
 
 ---
-##  Preview 
+## ⚙️ Langkah-langkah
+
+1. Siapkan web server (seperti XAMPP) yang mendukung **PHP** dan **MySQL/MariaDB**.
+2. Impor `data.sql` melalui **phpMyAdmin** (`http://localhost/phpmyadmin`):
+   - Buat database baru dengan nama `todo_db`.
+     <img width="1440" height="331" alt="Screenshot 2026-10-19 at 7 43 32 PM" src="https://github.com/user-attachments/assets/1e749bd7-0afd-434e-a2b9-27ac3b3bc95f" />
+   - Pilih database `todo_db`, lalu buka tab **Import** dan pilih file **`data.sql`**.
+     <img width="1440" height="820" alt="Screenshot 2026-10-19 at 7 44 17 PM" src="https://github.com/user-attachments/assets/185328b0-d0cf-47da-a7e4-d6c0e15a5fe3" />
+   - Klik **Go** untuk membuat tabel `todos` beserta data dummy.
+3. Sesuaikan koneksi di `config.php` bila perlu:
+   - **Host**: `localhost` 
+   - **Database Name**: `todo_db`
+   - **User**: `root`
+4. Jalankan folder ini melalui Apache/XAMPP (misalnya `http://localhost/todolist/index.php`):
+
+---
+## 📸 Lampiran
+
+<img width="1440" height="820" alt="Screenshot 2026-10-19 at 7 46 55 PM" src="https://github.com/user-attachments/assets/98faa495-ea67-4d23-802e-232b4e356375" />
+
+<img width="1440" height="820" alt="Screenshot 2026-10-19 at 7 46 37 PM" src="https://github.com/user-attachments/assets/91f24dbf-b784-4e6c-80d0-b0935a52bcca" />
+
+
+
+

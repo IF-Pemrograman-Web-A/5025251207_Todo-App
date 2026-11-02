@@ -143,6 +143,9 @@ if ($edit_id) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List - <?= ucfirst($type) ?></title>
     <link rel="stylesheet" href="cantik.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e2022">
+    
     <style>
         .modal-bg {
             position: fixed;
@@ -166,6 +169,8 @@ if ($edit_id) {
             <h1>Welcome back 👋</h1>
             <p>TODO LIST KEZIA</p>
         </div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+       <button id="installBtn" type="button">Install App</button>
         <button id="darkModeButton" type="button">Toggle Theme</button>
     </header>
 

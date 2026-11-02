@@ -66,6 +66,11 @@ header p {
     font-size: 13px;
     color: var(--text-secondary);
 }
+header > div:last-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
 #darkModeButton {
     background-color: var(--btn-primary);
@@ -76,6 +81,22 @@ header p {
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+}
+
+#installBtn {
+    display: none; 
+    background-color: var(--btn-primary);
+    color: var(--btn-text);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+#installBtn:hover {
+    opacity: 0.9;
 }
 
 .app-container {

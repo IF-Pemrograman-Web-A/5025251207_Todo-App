@@ -1,0 +1,16 @@
+{
+  "name": "Todo App Kezia",
+  "short_name": "TodoApp",
+  "start_url": "./index.php",
+  "display": "standalone",
+  "background_color": "#f3f5f9",
+  "theme_color": "#1e2022",
+ "icons": [
+  {
+    "src": "./E05.png",
+    "sizes": "196x196",
+    "type": "image/png",
+    "purpose": "any maskable"
+  }
+]
+}
